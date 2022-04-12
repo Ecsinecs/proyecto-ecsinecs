@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- Fontawesome icons -->
+  <script src="https://kit.fontawesome.com/9fa2adda2d.js" crossorigin="anonymous"></script>
+  <title>Meow Studios - Inicio</title>
+</head>
+
+<body class="body grid__index">
+  <header class="header">
+    <nav class="nav">
+      <!-- Navbar -->
+      <img src="./assets/img/Logonav2copia.png" alt="Logo" class="nav__img" />
+      <i class="fas fa-bars burguer__menu"></i>
+      <ul class="nav__ul">
+        <li><a href="index.html" class="inThisPage">Inicio</a></li>
+        <li><a href="./pages/projects.html" class="nav__ulAnim">Proyectos</a></li>
+        <li><a href="./pages/team.html" class="nav__ulAnim">Equipo</a></li>
+        <li><a href="./pages/contactus.html" class="nav__ulAnim">Contactanos</a></li>
+        <li><a href="./pages/blog.html" class="nav__ulAnim">Blog</a></li>
+      </ul>
+    </nav>
+    <ul class="mobile__menu">
+      <li><a href="index.html" class="mobile__ul inThisPage">Inicio</a></li>
+      <li><a href="./pages/projects.html">Proyectos</a></li>
+      <li><a href="./pages/team.html">Equipo</a></li>
+      <li><a href="./pages/contactus.html">Contactanos</a></li>
+      <li><a href="./pages/blog.html">Blog</a></li>
+    </ul>
+  </header>
+  <main class="container">
+    <section>
+      <!-- Logo central de la pagina -->
+      <div class="main__logo">
+        <img src="assets/img/Cat.png" alt="Main Logo" class="main__titleImg" />
+        <h1><span class="main__titleMeow main__title">Meow</span><br><span
+            class="main__titleStudios main__title">Studios</span></h1>
+      </div>
+      <hr class="main__hr" />
+      <!-- Información debajo del logo -->
+      <div class="main__description">
+        <h2 class="main__subtitle main__subtitleTitle">¿Quienes somos?</h2>
+        <p class="main__subtitle main__subtitleText">
+          Somos un estudio independiente que realiza animaciones,
+          videojuegos cortos y colaboraciones con otros estudios.
+        </p>
+      </div>
+    </section>
+  </main>
+  <!-- Footer | Los divs son para que flex ordene todo bien, y el div con clase footer__div es para que el color no se recorte. -->
+  <footer class="footer">
+    <div class="footer__div">
+      <div>
+        <p>¡Siguenos en nuestras redes!</p>
+        <div class="footer__redes">
+          <a href="index.html"><img src="assets/img/instagram.png" alt="Instagram" class="footer__socialImg" /></a>
+          <a href="index.html"><img src="assets/img/twitter.png" alt="Twitter" class="footer__socialImg" /></a>
+        </div>
+      </div>
+      <div class="">
+        <p class="footer__textNewsletter">¡Suscribite a nuestro newsletter para recibir noticias!</p>
+        <div>
+          <form action="" class="footer__newsletter">
+            <input type="text" name="email" id="email" placeholder="example@gmail.com" required
+              class="footer__formText" />
+            <input type="submit" value="¡Suscribirse!" class="footer__formSubmit" />
+          </form>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>Todos los derechos de autor reservados</p>
+        <p>Pagina creada por Lucas Jähnel</p>
+      </div>
+  </footer>
+</body>
