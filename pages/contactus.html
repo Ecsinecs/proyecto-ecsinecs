@@ -43,47 +43,51 @@
     </header>
     <main class="container contact__container">
       <div>
-      <h1 class="contact__title">¡Déjanos tus datos y te contactaremos!</h1>
-      <form action="">
-        <input
-          type="text"
-          name="name"
-          id="name"
-          placeholder="Nombre"
-          required
-          class="contact__form contact__formText contact__formTextMargin"
+        <h1 class="contact__title">¡Déjanos tus datos y te contactaremos!</h1>
+        <form action="">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Nombre"
+            required
+            class="contact__form contact__formText contact__formTextMargin"
+          />
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            placeholder="Apellido"
+            required
+            class="contact__form contact__formText"
+          />
+          <br />
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="example@gmail.com"
+            required
+            class="contact__form contact__formMail"
+          />
+          <br />
+          <input type="submit" value="¡Enviar!" class="contact__formSubmit" />
+        </form>
+        <h2 class="contact__title">
+          ¡O puedes enviarnos un correo o mensaje por nuestras redes!
+        </h2>
+        <img src="../assets/img/gmail.png" alt="Gmail" class="contact__img" />
+        <img
+          src="../assets/img/instagram.png"
+          alt="Instagram"
+          class="contact__img"
         />
-        <input
-          type="text"
-          name="surname"
-          id="surname"
-          placeholder="Apellido"
-          required
-          class="contact__form contact__formText"
+        <img
+          src="../assets/img/twitter.png"
+          alt="Twitter"
+          class="contact__img"
         />
-        <br />
-        <input
-          type="text"
-          name="email"
-          id="email"
-          placeholder="example@gmail.com"
-          required
-          class="contact__form contact__formMail"
-        />
-        <br />
-        <input type="submit" value="¡Enviar!" class="contact__formSubmit" />
-      </form>
-      <h2 class="contact__title">
-        ¡O puedes enviarnos un correo o mensaje por nuestras redes!
-      </h2>
-      <img src="../assets/img/gmail.png" alt="Gmail" class="contact__img" />
-      <img
-        src="../assets/img/instagram.png"
-        alt="Instagram"
-        class="contact__img"
-      />
-      <img src="../assets/img/twitter.png" alt="Twitter" class="contact__img" />
-    </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__div">
@@ -111,3 +115,4 @@
       </div>
     </footer>
   </body>
+</html>

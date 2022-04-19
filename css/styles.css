@@ -112,7 +112,7 @@ hr {
   background-color: rgb(230, 210, 198);
   border-top: 2px solid rgb(207, 186, 173);
   font-size: 1rem;
-  margin-top: 1rem ;
+  margin-top: 1rem;
   padding-top: 1rem;
 }
 
@@ -249,7 +249,7 @@ hr {
 
 .main__titleImg {
   height: 9rem;
-  animation-name: slideImg;
+  animation-name: none;
   animation-duration: 3s;
   overflow: hidden;
 }
@@ -258,19 +258,20 @@ hr {
   font-weight: 600;
   font-style: italic;
   color: rgb(42, 42, 71);
-  overflow: hidden;
 }
 
 .main__titleMeow {
   font-size: 3rem;
-  animation-name: slidemeow;
+  animation-name: none;
   animation-duration: 2s;
+  overflow: hidden;
 }
 
 .main__titleStudios {
   font-size: 1.5rem;
-  animation-name: slidetext;
+  animation-name: none;
   animation-duration: 3s;
+  overflow: hidden;
 }
 
 .main__logo {
@@ -278,6 +279,7 @@ hr {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  overflow: hidden;
 }
 
 .main__subtitle {
@@ -338,12 +340,15 @@ hr {
 @media (min-width: 768px) {
   .main__titleImg {
     height: 18rem;
+    animation-name: slideImg;
   }
   .main__titleMeow {
     font-size: 7rem;
+    animation-name: slidemeow;
   }
   .main__titleStudios {
     font-size: 4rem;
+    animation-name: slidetext;
   }
   .main__subtitleTitle {
     font-size: 2rem;
@@ -435,11 +440,10 @@ hr {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
-  grid-template-areas: 
-  "header"
-  "main"
-  "footer"
-  ;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
   height: 100vh;
 }
 
@@ -458,16 +462,19 @@ hr {
 .equipo__icon {
   font-size: 11rem;
   padding-bottom: 1rem;
+  transition: all 1s ease-in-out;
 }
 
 .equipo__title {
   font-weight: 700;
   font-size: 3rem;
   padding-bottom: 1rem;
+  transition: all 1s ease-in-out;
 }
 
 .equipo__profession {
   font-size: 1.4rem;
+  transition: all 1s ease-in-out;
 }
 
 .equipo__hiring {
@@ -481,6 +488,7 @@ hr {
 
 .equipo__hiringLink {
   font-weight: 700;
+  transition: all 0.4s ease-in-out;
 }
 
 .equipo__flex {
@@ -492,6 +500,30 @@ hr {
 .equipo__cards {
   margin: 5rem;
   text-align: center;
+}
+
+.equipo__cards:hover > .equipo__icon {
+  color: rgb(18, 18, 43);
+  font-size: 11.5rem;
+  text-shadow: 0px 0px 10px rgb(255, 191, 0);
+}
+
+.equipo__cards:hover > .equipo__profession {
+  color: rgb(18, 18, 43);
+  font-size: 1.5rem;
+  text-shadow: 0px 0px 4px rgb(255, 191, 0);
+}
+
+.equipo__cards:hover > .equipo__title {
+  color: rgb(18, 18, 43);
+  font-size: 3.4rem;
+  text-shadow: 0px 0px 6px rgb(255, 191, 0);
+}
+
+.equipo__hiringLink:hover {
+  font-size: 2rem;
+  color: rgb(52, 52, 122);
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.423);
 }
 
 @media (max-width: 320px) {
@@ -527,11 +559,10 @@ hr {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
-  grid-template-areas: 
-  "header"
-  "main"
-  "footer"
-  ;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
   height: 100vh;
 }
 
@@ -559,7 +590,7 @@ hr {
   text-align: center;
 } */
 
-.contact__container{
+.contact__container {
   background-color: rgb(230, 210, 198);
   border: 2px solid rgb(207, 186, 173);
   border-radius: 20px;
@@ -586,6 +617,11 @@ hr {
   border-radius: 5px;
   text-align: center;
   margin-bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact__form:hover {
+  box-shadow: 0px 0px 5px rgba(0, 140, 255, 0.647);
 }
 
 /* .contact__form {
@@ -632,10 +668,19 @@ hr {
   width: 7rem;
   height: 2rem;
   margin-bottom: 1rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.contact__formSubmit:hover {
+  background-color: rgb(242, 182, 0);
+  width: 7.5rem;
+  height: 2.2rem;
+  font-size: 1.1rem;
+  box-shadow: 0px 0px 8px rgb(255, 191, 0);
 }
 
 .contact__img {
-  width: 5rem;
+  width: 10rem;
   margin: 0;
   padding: 0.5rem 0;
 }
@@ -647,7 +692,7 @@ hr {
 } */
 
 @media (min-width: 320px) {
-  .contact__container{
+  .contact__container {
     width: 90%;
     min-width: 90%;
     max-height: none;
@@ -679,7 +724,7 @@ hr {
 }
 
 @media (min-width: 543px) {
-  .contact__container{
+  .contact__container {
     width: 90%;
     min-width: 90%;
     max-height: none;
@@ -711,7 +756,7 @@ hr {
 }
 
 @media (min-width: 1024px) {
-  .contact__container{
+  .contact__container {
     width: 50%;
     min-width: 45%;
     max-height: 80%;
@@ -771,7 +816,7 @@ hr {
   height: 12rem;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .container__blog {
     width: 70%;
   }
@@ -783,7 +828,7 @@ hr {
   }
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
   .container__blog {
     width: 50%;
   }
