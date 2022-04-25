@@ -1,0 +1,70 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(230, 210, 198);
+  border-bottom: 2px solid rgb(207, 186, 173);
+
+  .nav__img {
+    height: 5rem;
+  }
+
+  .nav__ul {
+    display: none;
+    align-items: center;
+    list-style-type: none;
+    font-size: 1.3rem;
+    visibility: hidden;
+
+    li {
+      margin-right: 1.5rem;
+    }
+  }
+
+  .nav__ulAnim {
+    color: rgba(48, 48, 71, 0.6);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: rgb(42, 42, 71);
+      font-weight: bold;
+    }
+  }
+}
+
+.burguer__menu {
+  font-size: 1.6rem;
+  margin-right: 2rem;
+}
+
+.mobile__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  color: rgb(48, 48, 161);
+  font-size: 1.3rem;
+  background-color: rgb(230, 210, 198);
+  border-bottom: 0.2rem solid rgb(207, 186, 173);
+}
+
+/* Media Query para header/nav */
+
+@media (min-width: 1024px) {
+  .mobile__menu {
+    visibility: hidden;
+    display: none;
+  }
+  .burguer__menu {
+    visibility: hidden;
+    display: none;
+  }
+  .nav .nav__ul {
+    display: flex;
+    visibility: visible;
+  }
+  .header {
+    position: sticky;
+    top: 0;
+  }
+}

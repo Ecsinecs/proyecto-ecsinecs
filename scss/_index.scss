@@ -1,0 +1,161 @@
+// Grids
+
+.grid__index {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  height: 100vh;
+
+  .grid__index header {
+    grid-area: header;
+  }
+
+  .grid__index main {
+    grid-area: main;
+  }
+
+  .grid__index footer {
+    grid-area: footer;
+  }
+}
+
+// El logo gigante que se ve en medio de la pagina
+
+.main__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  overflow: hidden;
+
+  .main__titleImg {
+    height: 9rem;
+    animation-name: none;
+    animation-duration: 3s;
+    overflow: hidden;
+  }
+
+  .main__titleMeow {
+    font-size: 3rem;
+    animation-name: none;
+    animation-duration: 2s;
+    overflow: hidden;
+  }
+
+  .main__titleStudios {
+    font-size: 1.5rem;
+    animation-name: none;
+    animation-duration: 3s;
+    overflow: hidden;
+  }
+
+  .main__title {
+    font-weight: 600;
+    font-style: italic;
+    color: rgb(42, 42, 71);
+  }
+}
+
+// Descripción "quienes somos"
+
+.main__description {
+  display: flex;
+  flex-direction: column;
+
+  .main__subtitle {
+    color: rgb(42, 42, 71);
+    text-align: center;
+    padding: 2.5rem 0 0 0;
+  }
+
+  .main__subtitleTitle {
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-top: 1%;
+  }
+
+  .main__subtitleText {
+    font-size: 1rem;
+  }
+}
+
+/* Animaciones */
+
+@keyframes slidemeow {
+  from {
+    margin-left: 30rem;
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+    margin-left: 0;
+  }
+}
+
+@keyframes slidetext {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes slideImg {
+  from {
+    opacity: 0%;
+  }
+  70% {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+/* Media Query */
+
+@media (min-width: 768px) {
+  .main__logo {
+    .main__titleImg {
+      height: 18rem;
+      animation-name: slideImg;
+    }
+    .main__titleMeow {
+      font-size: 7rem;
+      animation-name: slidemeow;
+    }
+    .main__titleStudios {
+      font-size: 4rem;
+      animation-name: slidetext;
+    }
+  }
+
+  .main__description {
+    .main__subtitleTitle {
+      font-size: 2rem;
+    }
+    .main__subtitleText {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .main__logo .main__titleImg {
+    min-height: 27rem;
+    max-height: 30rem;
+  }
+  .main__logo {
+    .main__titleMeow {
+      font-size: 11rem;
+    }
+    .main__titleStudios {
+      font-size: 6rem;
+    }
+  }
+}

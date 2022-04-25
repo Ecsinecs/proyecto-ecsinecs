@@ -17,3 +17,7 @@ Añadida animación a las cards de team.html
 Añadida animación al "Contactanos" de team.html
 
 Añadida animación al botón de "¡Enviar!" de contactus.html
+
+25/4/2022
+
+Se realizó un port a SASS para index.html
