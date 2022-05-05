@@ -27,3 +27,5 @@ Se realizó un port a SASS para index.html
 Se añadió un map, mixin y extend para probar su uso.
 
 Añadido SEO basico (descripción y keywords).
+
+Eliminado codigo innecesario.

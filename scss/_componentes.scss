@@ -1,0 +1,13 @@
+$colores: (
+  font: rgb(42, 42, 71),
+  crema: rgb(230, 210, 198),
+  cremaOscura: rgb(207, 186, 173),
+  cremaClara: rgb(242, 233, 228),
+);
+
+@mixin formBox($border, $borderR, $width, $height) {
+  border: $border;
+  border-radius: $borderR;
+  width: $width;
+  height: $height;
+}
