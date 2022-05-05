@@ -1,6 +1,7 @@
 @import "header";
 @import "index";
 @import "footer";
+@import "componentes";
 
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap");
 
@@ -10,7 +11,7 @@
   box-sizing: border-box;
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
-  color: rgb(42, 42, 71);
+  color: map-get($map: $colores, $key: font);
   text-decoration: none;
 }
 
@@ -22,14 +23,17 @@ img {
   width: 80%;
   margin: 0 auto;
   max-width: 1320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .body {
-  background-color: rgb(242, 233, 228);
+  background-color: map-get($map: $colores, $key: cremaClara);
 }
 
 hr {
-  border: 1px solid rgb(207, 186, 173);
+  border: 1px solid map-get($map: $colores, $key: cremaOscura);
 }
 
 .inThisPage {

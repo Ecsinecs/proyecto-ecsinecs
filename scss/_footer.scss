@@ -1,6 +1,8 @@
+@import "componentes";
+
 .footer {
-  background-color: rgb(230, 210, 198);
-  border-top: 2px solid rgb(207, 186, 173);
+  background-color: map-get($map: $colores, $key: crema);
+  border-top: 2px solid map-get($map: $colores, $key: cremaOscura);
   font-size: 1rem;
   margin-top: 1rem;
   padding: 1rem 0;
@@ -50,24 +52,19 @@
 }
 
 .footer__formText {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 15rem;
-  height: 2rem;
+  @include formBox(1px solid #ccc, 5px, 15rem, 2rem);
   padding: 16px 10px;
   margin-bottom: 0.5rem;
 }
 
 .footer__formSubmit {
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  @include formBox(1px solid #ccc, 5px, 8rem, 2rem);
   color: whitesmoke;
   background-color: rgb(42, 42, 71);
-  width: 8rem;
-  height: 2rem;
   transition: all 0.5s ease-in-out;
 
   &:hover {
+    @extend .footer__formSubmit;
     background-color: rgb(213, 163, 0);
     border: 2px solid rgb(249, 245, 229);
     width: 8.5rem;

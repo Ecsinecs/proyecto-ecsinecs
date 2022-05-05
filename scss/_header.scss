@@ -1,16 +1,17 @@
+@import "componentes";
+
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(230, 210, 198);
-  border-bottom: 2px solid rgb(207, 186, 173);
+  background-color: map-get($map: $colores, $key: crema);
+  border-bottom: 2px solid map-get($map: $colores, $key: cremaOscura);
 
   .nav__img {
     height: 5rem;
   }
 
   .nav__ul {
-    display: none;
     align-items: center;
     list-style-type: none;
     font-size: 1.3rem;
@@ -26,7 +27,7 @@
     transition: all 0.2s ease-in-out;
 
     &:hover {
-      color: rgb(42, 42, 71);
+      color: map-get($map: $colores, $key: font);
       font-weight: bold;
     }
   }
@@ -38,14 +39,11 @@
 }
 
 .mobile__menu {
-  display: flex;
+  @extend .nav;
   flex-direction: column;
-  align-items: center;
   list-style-type: none;
-  color: rgb(48, 48, 161);
   font-size: 1.3rem;
-  background-color: rgb(230, 210, 198);
-  border-bottom: 0.2rem solid rgb(207, 186, 173);
+  border-bottom: 0.15rem solid map-get($map: $colores, $key: cremaOscura);
 }
 
 /* Media Query para header/nav */

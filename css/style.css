@@ -1,29 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap");
-.nav {
+.nav, .mobile__menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: rgb(230, 210, 198);
   border-bottom: 2px solid rgb(207, 186, 173);
 }
-.nav .nav__img {
+.nav .nav__img, .mobile__menu .nav__img {
   height: 5rem;
 }
-.nav .nav__ul {
-  display: none;
+.nav .nav__ul, .mobile__menu .nav__ul {
   align-items: center;
   list-style-type: none;
   font-size: 1.3rem;
   visibility: hidden;
 }
-.nav .nav__ul li {
+.nav .nav__ul li, .mobile__menu .nav__ul li {
   margin-right: 1.5rem;
 }
-.nav .nav__ulAnim {
+.nav .nav__ulAnim, .mobile__menu .nav__ulAnim {
   color: rgba(48, 48, 71, 0.6);
   transition: all 0.2s ease-in-out;
 }
-.nav .nav__ulAnim:hover {
+.nav .nav__ulAnim:hover, .mobile__menu .nav__ulAnim:hover {
   color: rgb(42, 42, 71);
   font-weight: bold;
 }
@@ -34,14 +33,10 @@
 }
 
 .mobile__menu {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   list-style-type: none;
-  color: rgb(48, 48, 161);
   font-size: 1.3rem;
-  background-color: rgb(230, 210, 198);
-  border-bottom: 0.2rem solid rgb(207, 186, 173);
+  border-bottom: 0.15rem solid rgb(207, 186, 173);
 }
 
 /* Media Query para header/nav */
@@ -56,7 +51,7 @@
     display: none;
   }
 
-  .nav .nav__ul {
+  .nav .nav__ul, .mobile__menu .nav__ul {
     display: flex;
     visibility: visible;
   }
@@ -111,7 +106,6 @@
 .main__logo .main__title {
   font-weight: 600;
   font-style: italic;
-  color: rgb(42, 42, 71);
 }
 
 .main__description {
@@ -119,7 +113,6 @@
   flex-direction: column;
 }
 .main__description .main__subtitle {
-  color: rgb(42, 42, 71);
   text-align: center;
   padding: 2.5rem 0 0 0;
 }
@@ -254,13 +247,13 @@
   margin-bottom: 0.5rem;
 }
 
-.footer__formSubmit {
+.footer__formSubmit, .footer__formSubmit:hover {
   border: 1px solid #ccc;
   border-radius: 5px;
-  color: whitesmoke;
-  background-color: rgb(42, 42, 71);
   width: 8rem;
   height: 2rem;
+  color: whitesmoke;
+  background-color: rgb(42, 42, 71);
   transition: all 0.5s ease-in-out;
 }
 .footer__formSubmit:hover {
@@ -322,6 +315,9 @@ img {
   width: 80%;
   margin: 0 auto;
   max-width: 1320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .body {

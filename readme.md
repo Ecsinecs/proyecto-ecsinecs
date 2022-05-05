@@ -21,3 +21,9 @@ Añadida animación al botón de "¡Enviar!" de contactus.html
 25/4/2022
 
 Se realizó un port a SASS para index.html
+
+5/5/2022
+
+Se añadió un map, mixin y extend para probar su uso.
+
+Añadido SEO basico (descripción y keywords).
