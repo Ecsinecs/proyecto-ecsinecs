@@ -1,0 +1,52 @@
+@import "componentes";
+
+.container__blog {
+  background-color: map-get($map: $colores, $key: crema);
+  text-align: center;
+  width: 85%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 2px solid map-get($map: $colores, $key: cremaOscura);
+  border-radius: 10px;
+}
+
+.blog__title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem 0 1rem 0;
+}
+
+.blog__text {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+
+.blog__img {
+  width: 30rem;
+  height: 12rem;
+}
+
+@media (min-width: 768px) {
+  .container__blog {
+    width: 70%;
+  }
+  .blog__title {
+    font-size: 2rem;
+  }
+  .blog__text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container__blog {
+    width: 50%;
+  }
+  .blog__title {
+    font-size: 2rem;
+  }
+  .blog__text {
+    font-size: 1.3rem;
+  }
+}

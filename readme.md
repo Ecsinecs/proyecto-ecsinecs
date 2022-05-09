@@ -29,3 +29,7 @@ Se añadió un map, mixin y extend para probar su uso.
 Añadido SEO basico (descripción y keywords).
 
 Eliminado codigo innecesario.
+
+9/5/2022
+
+Realizado port completo a SASS.

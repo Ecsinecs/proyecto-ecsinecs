@@ -297,6 +297,400 @@
     font-size: 1.2rem;
   }
 }
+.table__container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1920px;
+}
+.table__container .table__properties {
+  border-collapse: collapse;
+}
+.table__container .table__img {
+  min-width: 15rem;
+  width: 30rem;
+  height: 15rem;
+  min-height: 15rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 40px;
+}
+.table__container .table__text {
+  text-align: left;
+  font-size: 1.4rem;
+  padding: 0.5rem 0 0.5rem 2rem;
+}
+.table__container .table__line {
+  border-top: 2px solid rgb(207, 186, 173);
+}
+
+.table__mobile {
+  visibility: hidden;
+  display: none;
+  padding-bottom: 1rem;
+}
+
+/* Media Query para projects.html */
+@media (max-width: 768px) {
+  .table__desktop {
+    visibility: hidden;
+    display: none;
+  }
+
+  .table__mobile {
+    display: block;
+    visibility: visible;
+  }
+
+  .table__container .table__text {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    padding: 0 auto 1rem auto;
+  }
+}
+@media (max-width: 1024px) {
+  .table__text {
+    font-size: 1.2rem;
+  }
+}
+.grid__team {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "main" "footer";
+  height: 100vh;
+}
+.grid__team .grid__team header {
+  grid-area: header;
+}
+.grid__team .grid__team main {
+  grid-area: main;
+}
+.grid__team .grid__team footer {
+  grid-area: footer;
+}
+
+.equipo__cards {
+  margin: 5rem;
+  text-align: center;
+}
+.equipo__cards .equipo__icon {
+  font-size: 11rem;
+  padding-bottom: 1rem;
+  transition: all 1s ease-in-out;
+}
+.equipo__cards .equipo__title {
+  font-weight: 700;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  transition: all 1s ease-in-out;
+}
+.equipo__cards .equipo__profession {
+  font-size: 1.4rem;
+  transition: all 1s ease-in-out;
+}
+
+.equipo__hiring {
+  background-color: rgb(230, 210, 198);
+  border: 1px solid rgb(207, 186, 173);
+  border-radius: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 0.8rem 1rem;
+}
+.equipo__hiring .equipo__hiringLink {
+  font-weight: 700;
+  transition: all 0.4s ease-in-out;
+}
+.equipo__hiring .equipo__hiringLink:hover {
+  font-size: 2rem;
+  color: rgb(52, 52, 122);
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.423);
+}
+
+.containerteam {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1320px;
+}
+
+.equipo__flex {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+}
+
+.equipo__cards:hover > .equipo__icon {
+  color: rgb(18, 18, 43);
+  font-size: 11.5rem;
+  text-shadow: 0px 0px 10px rgb(255, 191, 0);
+}
+
+.equipo__cards:hover > .equipo__profession {
+  color: rgb(18, 18, 43);
+  font-size: 1.5rem;
+  text-shadow: 0px 0px 4px rgb(255, 191, 0);
+}
+
+.equipo__cards:hover > .equipo__title {
+  color: rgb(18, 18, 43);
+  font-size: 3.4rem;
+  text-shadow: 0px 0px 6px rgb(255, 191, 0);
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 90%;
+  }
+
+  .equipo__flex {
+    flex-direction: column;
+  }
+
+  .equipo__hiring {
+    margin: 2rem 0 1rem 0;
+  }
+
+  .equipo__cards {
+    margin: 1.5rem 0rem;
+  }
+}
+@media (max-width: 1024px) {
+  .equipo__flex {
+    flex-direction: column;
+  }
+
+  .equipo__hiring {
+    margin: 2rem 0 1rem 0;
+  }
+
+  .equipo__cards {
+    margin: 1.5rem 0rem;
+  }
+}
+.grid__contactus {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "main" "footer";
+  height: 100vh;
+}
+.grid__contactus .grid__contactus header {
+  grid-area: header;
+}
+.grid__contactus .grid__contactus main {
+  grid-area: main;
+}
+.grid__contactus .grid__contactus footer {
+  grid-area: footer;
+}
+
+.contact__container {
+  background-color: rgb(230, 210, 198);
+  border: 2px solid rgb(207, 186, 173);
+  border-radius: 20px;
+  width: 90%;
+  min-width: 90%;
+  max-height: none;
+  margin: 1rem auto auto auto;
+  padding: 1.5rem 0px;
+  text-align: center;
+}
+.contact__container .contact__title {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.contact__container .contact__form {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+.contact__container .contact__form:hover {
+  box-shadow: 0px 0px 5px rgba(0, 140, 255, 0.647);
+}
+.contact__container .contact__formText {
+  width: 12rem;
+  height: 2rem;
+}
+.contact__container .contact__formTextMargin {
+  margin: 0;
+}
+.contact__container .contact__formMail {
+  width: 12rem;
+  margin-bottom: 0.2rem;
+  height: 2rem;
+}
+.contact__container .contact__formSubmit {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: whitesmoke;
+  background-color: rgb(42, 42, 71);
+  width: 7rem;
+  height: 2rem;
+  margin-bottom: 1rem;
+  transition: all 0.4s ease-in-out;
+}
+.contact__container .contact__formSubmit:hover {
+  background-color: rgb(242, 182, 0);
+  width: 7.5rem;
+  height: 2.2rem;
+  font-size: 1.1rem;
+  box-shadow: 0px 0px 8px rgb(255, 191, 0);
+}
+.contact__container .contact__img {
+  width: 10rem;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+@media (min-width: 320px) {
+  .contact__container {
+    width: 90%;
+    min-width: 90%;
+    max-height: none;
+    margin: 1rem auto auto auto;
+    padding: 1.5rem 0px;
+  }
+  .contact__container .contact__title {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .contact__container .contact__form {
+    margin-bottom: 0;
+  }
+  .contact__container .contact__formMail {
+    width: 15rem;
+    margin-bottom: 0.2rem;
+  }
+  .contact__container .contact__formText {
+    width: 15rem;
+  }
+  .contact__container .contact__formTextMargin {
+    margin: 0;
+  }
+  .contact__container .contact__img {
+    width: 5rem;
+    margin: 0;
+    padding: 0.5rem 0;
+  }
+}
+@media (min-width: 543px) {
+  .contact__container {
+    width: 90%;
+    min-width: 90%;
+    max-height: none;
+    margin: 1rem auto auto auto;
+    padding: 1.5rem 0px;
+  }
+  .contact__container .contact__title {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .contact__container .contact__form {
+    margin-bottom: 0;
+  }
+  .contact__container .contact__formMail {
+    width: 30.3rem;
+    margin-bottom: 0.2rem;
+  }
+  .contact__container .contact__formText {
+    width: 15rem;
+  }
+  .contact__container .contact__formTextMargin {
+    margin: 0;
+  }
+  .contact__container .contact__img {
+    width: 5rem;
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+  }
+}
+@media (min-width: 1024px) {
+  .contact__container {
+    width: 50%;
+    min-width: 45%;
+    max-height: 80%;
+    margin: 7rem auto auto auto;
+    padding: 1.5rem 0px;
+  }
+  .contact__container .contact__title {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .contact__container .contact__form {
+    margin-bottom: 0;
+  }
+  .contact__container .contact__formMail {
+    width: 30.3rem;
+    margin-bottom: 0.2rem;
+  }
+  .contact__container .contact__formText {
+    width: 15rem;
+  }
+  .contact__container .contact__formTextMargin {
+    margin: 0;
+  }
+  .contact__container .contact__img {
+    width: 10rem;
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+  }
+}
+.container__blog {
+  background-color: rgb(230, 210, 198);
+  text-align: center;
+  width: 85%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 2px solid rgb(207, 186, 173);
+  border-radius: 10px;
+}
+
+.blog__title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem 0 1rem 0;
+}
+
+.blog__text {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+
+.blog__img {
+  width: 30rem;
+  height: 12rem;
+}
+
+@media (min-width: 768px) {
+  .container__blog {
+    width: 70%;
+  }
+
+  .blog__title {
+    font-size: 2rem;
+  }
+
+  .blog__text {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .container__blog {
+    width: 50%;
+  }
+
+  .blog__title {
+    font-size: 2rem;
+  }
+
+  .blog__text {
+    font-size: 1.3rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;

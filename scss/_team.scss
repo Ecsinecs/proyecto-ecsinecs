@@ -1,0 +1,126 @@
+@import "componentes";
+
+//Grids
+
+.grid__team {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  height: 100vh;
+
+  .grid__team header {
+    grid-area: header;
+  }
+
+  .grid__team main {
+    grid-area: main;
+  }
+
+  .grid__team footer {
+    grid-area: footer;
+  }
+}
+
+.equipo__cards {
+  margin: 5rem;
+  text-align: center;
+
+  .equipo__icon {
+    font-size: 11rem;
+    padding-bottom: 1rem;
+    transition: all 1s ease-in-out;
+  }
+
+  .equipo__title {
+    font-weight: 700;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    transition: all 1s ease-in-out;
+  }
+
+  .equipo__profession {
+    font-size: 1.4rem;
+    transition: all 1s ease-in-out;
+  }
+}
+
+.equipo__hiring {
+  background-color: map-get($map: $colores, $key: crema);
+  border: 1px solid map-get($map: $colores, $key: cremaOscura);
+  border-radius: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 0.8rem 1rem;
+
+  .equipo__hiringLink {
+    font-weight: 700;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      font-size: 2rem;
+      color: rgb(52, 52, 122);
+      text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.423);
+    }
+  }
+}
+
+.containerteam {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1320px;
+}
+
+.equipo__flex {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+}
+
+.equipo__cards:hover > .equipo__icon {
+  color: rgb(18, 18, 43);
+  font-size: 11.5rem;
+  text-shadow: 0px 0px 10px rgb(255, 191, 0);
+}
+
+.equipo__cards:hover > .equipo__profession {
+  color: rgb(18, 18, 43);
+  font-size: 1.5rem;
+  text-shadow: 0px 0px 4px rgb(255, 191, 0);
+}
+
+.equipo__cards:hover > .equipo__title {
+  color: rgb(18, 18, 43);
+  font-size: 3.4rem;
+  text-shadow: 0px 0px 6px rgb(255, 191, 0);
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 90%;
+  }
+  .equipo__flex {
+    flex-direction: column;
+  }
+  .equipo__hiring {
+    margin: 2rem 0 1rem 0;
+  }
+  .equipo__cards {
+    margin: 1.5rem 0rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .equipo__flex {
+    flex-direction: column;
+  }
+  .equipo__hiring {
+    margin: 2rem 0 1rem 0;
+  }
+  .equipo__cards {
+    margin: 1.5rem 0rem;
+  }
+}
