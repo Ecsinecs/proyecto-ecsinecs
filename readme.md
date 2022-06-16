@@ -40,6 +40,6 @@ V. 1.0.0
 
 > Corregido un error en la navbar
 >
-> Fin del soporte de la pagina, la misma se puede encontrar publicada en https://cattostudios.000webhostapp.com/index.html
+> Fin del soporte de la pagina, la misma se puede encontrar publicada en https://catstudios.000webhostapp.com/
 >
 > Se recreará la pagina cuando sepa JavaScript, ya que varias ideas no se pudieron implementar por la falta de conocimientos de este.
